@@ -6,9 +6,9 @@ var webpack = require('webpack');
 module.exports = {
     entry: ["babel-polyfill","./src/main.js"],
     output: {
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: '[name]-[hash].js'
+        path: path.resolve('dist'),
+        publicPath: '/dist',
+        filename: '[name].js'
     },
     module: {
         rules: [
