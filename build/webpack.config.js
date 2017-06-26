@@ -49,7 +49,14 @@ module.exports = {
         historyApiFallback: true,
         inline: true
     },
+    watchOptions:{  
+        aggregateTimeout:300,
+        poll:1000
+    },
     performance: {
         hints: false
-    }
+    },
+    node: {
+        fs: 'empty'
+    },
 }

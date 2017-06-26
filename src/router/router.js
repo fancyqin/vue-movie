@@ -1,4 +1,4 @@
-import App from '../App'
+import App from '../App.vue'
 
 
 export default [{
@@ -11,7 +11,7 @@ export default [{
         },
         {
             path: '/home',
-            component: r => require.ensure([], () => r(require('../page/home/home')), 'home')
+            component: r => require.ensure([], () => r(require('../page/home/home.vue')), 'home')
         }
     ]
 }]
